@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "elk"
+version = "0.1.0"
+description = ""
+authors = ["js.bae <js.bae@heumlabs.io>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^5.0"
+psycopg2-binary = "^2.9.9"
+django-extensions = "^3.2.3"
+django-ninja = "^1.1.0"
+elasticsearch = "^8.11.1"
+
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.18.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

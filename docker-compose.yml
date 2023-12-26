@@ -1,0 +1,24 @@
+version: '2.2'
+services:
+  es01:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.11.3
+    container_name: es01
+    environment:
+      - discovery.type=single-node
+    ports:
+      - 9200:9200
+      - 9300:9300
+  
+  kib01:
+    image: docker.elastic.co/kibana/kibana:8.11.3
+    container_name: kib01
+    ports:
+      - 5601:5601
+    environment:
+      ELASTICSEARCH_URL: http://es01:9200
+    depends_on:
+      - es01
+
+
+# KsTJDV-rBiXPNza1GVSI
+# eyJ2ZXIiOiI4LjExLjMiLCJhZHIiOlsiMTcyLjE5LjAuMjo5MjAwIl0sImZnciI6ImFkMTBlMjkwMzIzOGFjNGVjOTZmYmNlMDFiMzBhNWE1ZmQ3ZTQ1ZWVjMGY5MmE1MGM0OWIzODEzZjIyMTRiYzciLCJrZXkiOiJDY1JPcG93Qkl5bEFpOEM5NEdZQzpRc1A3eDN6RVNLeUl1WGRJOFRuMUdBIn0=
