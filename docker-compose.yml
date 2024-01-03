@@ -20,6 +20,9 @@ services:
       - es01
 
 
+# docker exec -it es01 /usr/share/elasticsearch/bin/elasticsearch-reset-password -u elastic
+# docker exec -it es01 /usr/share/elasticsearch/bin/elasticsearch-create-enrollment-token -s kibana
+
 # LINUX-dev
 # KsTJDV-rBiXPNza1GVSI
 # eyJ2ZXIiOiI4LjExLjMiLCJhZHIiOlsiMTcyLjE5LjAuMjo5MjAwIl0sImZnciI6ImFkMTBlMjkwMzIzOGFjNGVjOTZmYmNlMDFiMzBhNWE1ZmQ3ZTQ1ZWVjMGY5MmE1MGM0OWIzODEzZjIyMTRiYzciLCJrZXkiOiJDY1JPcG93Qkl5bEFpOEM5NEdZQzpRc1A3eDN6RVNLeUl1WGRJOFRuMUdBIn0=
